@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -15,92 +21,254 @@ button{
     .landing-page_padding{
         padding-right: 100px;
         padding-left: 100px;
-    
-    }
 
-    .navigation-bar{
-        width: 100%;
-        height: 68px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        .logo{
-
-            .positivus-logo{
-                width: 219.54px;
-                height: 36px;
-            }
-        }
-
-        .navigation-bar_nav{
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            gap: 40px;
-
-            .navigation-bar_nav_list{
+        header{
+            .navigation-bar{
+                width: 100%;
+                height: 68px;
                 display: flex;
-                align-items: center;
-                gap: 40px;
                 flex-direction: row;
-                
-                .navigation-bar_nav_list__item{
-                    list-style: none;
+                align-items: center;
+                justify-content: space-between;
+
+                .logo{
+
+                    .positivus-logo{
+                        width: 219.54px;
+                        height: 36px;
+                    }
+                }
+
+                .navigation-bar_nav{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 40px;
+
+                    .navigation-bar_nav_list{
+                        display: flex;
+                        align-items: center;
+                        gap: 40px;
+                        flex-direction: row;
+                        
+                        .navigation-bar_nav_list__item{
+                            list-style: none;
+                        }
+                    }
+
+                    .navigation-bar_button_request{
+                        width: 231px;
+                        height: 68px;
+                        background: #fff;
+                        border-radius: 14px;
+                    }
                 }
             }
+            .header-main{
+                width: 100%;
+                height: 515px;
+                display: flex;
+                justify-content: space-between;
+                margin: 40px 0 40px 0;
 
-            .navigation-bar_button_request{
-                width: 231px;
-                height: 68px;
-                background: #fff;
-                border-radius: 14px;
+                .header-main_text{
+                    width: 531px;
+                    height: 481px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .header-main_consultation{
+                        width: 264px;
+                        height: 68px;
+                        background: #191A23;
+                        border-radius: 14px;
+                        color: #ffffff;
+                    }
+                    .header-main_text_h1{
+                        margin: 0 auto;
+                        font-weight: 500;
+                        font-size: 60px;
+                    }
+                }
+
+                .header-main_img, .gramophone{
+                    width: 600px;
+
+                    height: 515px;
+                }
+            }
+            .logotypes{
+                display: flex;
+                justify-content: space-between;
+
+                .logotypes-logo{
+                    width: 124.11px;
+                    height: 48px;
+                    filter: grayscale(1);
+                }
             }
         }
-    }
-    .header-main{
-        width: 100%;
-        height: 515px;
-        display: flex;
-        justify-content: space-between;
-        margin: 40px 0 40px 0;
+        main{
 
-        .header-main_text{
-            width: 531px;
-            height: 481px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            .services-header{
+                width: 100%;
+                height: 5.869vh;
+                display: flex;
+                flex-direction: row;
+                margin-top: 10vh;
 
-            .header-main_consultation{
-                width: 264px;
-                height: 68px;
-                background: #191A23;
-                border-radius: 14px;
-                color: #ffffff;
+                .services-header_heading{
+                    width: 8vw;
+                    height: 5.869vh;
+                    background: #B9FF66;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;     
+                    justify-content: center; 
+                    margin-right: 2.083vw;
+
+                    h2{
+                        margin: 0;
+                        font-weight: 600;
+                    }
+                }
+                .services-header_text{
+                    margin: 0;
+                    width: 37.760vw;
+                    height: 5.293vh;
+                    font-size: 18px;
+                }
             }
-            .header-main_text_h1{
-                margin: 0 auto;
-                font-weight: 500;
-                font-size: 60px;
+            .services{
+                margin-top: 7vh;
+                display: flex;
+                flex-direction: column;
+
+                .services-cards{
+                    width: 100%;
+
+                    .cards-section{
+                        width: 100%;
+                        height: 35.673vh;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        &.center-card-section{
+                            margin: 5.76vh 0 5.76vh 0;
+                        }
+
+                        .card{
+                            width: 39.063vw;
+                            height: 35.673vh;
+                            border: 1px solid black;
+                            border-radius: 45px;
+                            box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 1);
+
+                            &.card_grey{
+                                background: #F3F3F3;
+                            }
+                            &.card_lightgreen{
+                                background: #B9FF66;
+                            }
+                            &.card_darkblue{
+                                background: #191A23;
+                            }
+                            .card-padding{
+                                padding: 50px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .card_text{
+                                    height: 24.166vh;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+
+                                    .card_heading{
+                                        .card_heading_h3{
+                                            width: max-content;
+                                            margin: 0;
+                                            border-radius: 7px;
+                                            font-weight: 500;
+                                            padding: 0 3px 0 3px;
+
+                                            &.heading_background_lightgreen{
+                                                background: #B9FF66;
+                                            }
+                                            &.heading_background_white{
+                                                background: #fff;
+                                            }
+                                        }
+                                    }
+                                    
+                                    .card_link{
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        
+                                        .card_arrow{
+                                            width: 2.135vw;
+                                            height: 4.718vh;
+                                            margin-right: 9%;
+                                        }
+
+                                        p{
+                                            width: 8vw;
+
+                                            &.card_link_text_white{
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .card_illustration{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    
+                                    .card_illustration_img{
+
+                                        &.card_illustration_magnifyingglass{
+                                            width: clamp(80px, 13.67vw, 210px);
+                                            height: clamp(65px, 24.46vh, 170px);
+                                        }
+                                        &.card_illustration_windowarrow{
+                                            width: clamp(80px, 13.67vw, 210px);
+                                            height: clamp( 56.24px,21.24vh, 147.62px);
+                                        }
+                                        &.card_illustration_windowsmile{
+                                            margin-top: -4vh;
+                                            width: clamp(80px, 11.068vw, 170px);
+                                            height: clamp(80px, 24.46vh, 170px);
+                                        }
+                                        &.card_illustration_blackholes{
+                                            margin-top: -4vh;
+                                            width: clamp(80px, 12.370vw, 190px);
+                                            height: clamp( 73.4px, 24.85vh, 172.68px);
+                                        }
+                                        &.card_illustration_windows{
+                                            margin-top: -3vh;
+                                            width: clamp( 80px, 12.044vw, 185px);
+                                            height:clamp( 76px, 24.59vh, 170.91px);
+                                        }
+                                        &.card_illustration_diagrams{
+                                            margin-top: -4vh;
+                                            width: clamp(80px, 13.67vw, 210px);
+                                            height: clamp(65px, 24.46vh, 170px);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
-        }
-
-        .header-main_img, .gramophone{
-            width: 600px;
-
-            height: 515px;
-        }
-    }
-    .logotypes{
-        display: flex;
-        justify-content: space-between;
-
-        .logotypes-logo{
-            width: 124.11px;
-            height: 48px;
-            filter: grayscale(1);
         }
     }
 }
+
