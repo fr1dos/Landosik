@@ -176,6 +176,10 @@ console.log("Высота видимой области:", viewportHeight);
               </div>
             </div>
           </div>
+          <article className="services-header">
+            <div className="services-header_heading"><h2>Case Studies</h2></div>
+            <p className="services-header_text">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+          </article>
         </main>
       </div>
       
