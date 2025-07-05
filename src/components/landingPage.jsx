@@ -2,7 +2,11 @@
 
 
 function App() {
+  const viewportWidth = window.innerWidth;
+const viewportHeight = window.innerHeight;
 
+console.log("Ширина видимой области:", viewportWidth);
+console.log("Высота видимой области:", viewportHeight);
 
   return (
     <>
@@ -42,7 +46,142 @@ function App() {
             <img className="logotypes-logo" src="./Netflix.png" alt="Netflix" />
             <img className="logotypes-logo" src="./Zoom.png" alt="Zoom" />
           </div>
-        </header>  
+        </header>
+        <main>
+          <article className="services-header">
+            <div className="services-header_heading"><h2>Services</h2></div>
+            <p className="services-header_text"><span>At our digital marketing agency, we offer a range of services to </span><span>help businesses grow and succeed online. These services include:</span> </p>
+          </article>
+          <aside className="services">
+            <div className="services-cards">
+              <div className="cards-section">
+                <div className="card card_grey">
+                  <div className="card-padding">
+                    <div className="card_text">
+                      <div className="card_heading">
+                        <h3 className="card_heading_h3 heading_background_lightgreen">Search engine</h3>
+                        <h3 className="card_heading_h3 heading_background_lightgreen">optimization</h3>
+                      </div>
+                      <div className="card_link">
+                        <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
+                        <p>Learn more</p>
+                      </div>
+                    </div>
+                    <div className="card_illustration">
+                      <img className="card_illustration_img card_illustration_magnifyingglass" src="magnifyingglass.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div className="card card_lightgreen">
+                  <div className="card-padding">
+                    <div className="card_text">
+                      <div className="card_heading">
+                        <h3 className="card_heading_h3 heading_background_white">Pay-per-click</h3>
+                        <h3 className="card_heading_h3 heading_background_white">advertising</h3>
+                      </div>
+                      <div className="card_link">
+                        <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
+                        <p>Learn more</p>
+                      </div>
+                    </div>
+                    <div className="card_illustration">
+                      <img className="card_illustration_img card_illustration_windowarrow" src="windowandarrow.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="cards-section center-card-section">
+                <div className="card card_darkblue">
+                  <div className="card-padding">
+                    <div className="card_text">
+                      <div className="card_heading">
+                        <h3 className="card_heading_h3 heading_background_white">Social Media</h3>
+                        <h3 className="card_heading_h3 heading_background_white">Markreting</h3>
+                      </div>
+                      <div className="card_link">
+                        <img className="card_arrow" src="./blackandwhitearrow.png" alt="arrow"/>
+                        <p className="card_link_text_white">Learn more</p>
+                      </div>
+                    </div>
+                    <div className="card_illustration">
+                      <img className="card_illustration_img card_illustration_windowsmile" src="windowsmile.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div className="card card_grey">
+                  <div className="card-padding">
+                    <div className="card_text">
+                      <div className="card_heading">
+                        <h3 className="card_heading_h3 heading_background_lightgreen">Search engine</h3>
+                        <h3 className="card_heading_h3 heading_background_lightgreen">optimization</h3>
+                      </div>
+                      <div className="card_link">
+                        <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
+                        <p>Learn more</p>
+                      </div>
+                    </div>
+                    <div className="card_illustration">
+                      <img className="card_illustration_img card_illustration_blackholes" src="blackholes.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="cards-section">
+                <div className="card card_lightgreen">
+                  <div className="card-padding">
+                    <div className="card_text">
+                      <div className="card_heading">
+                        <h3 className="card_heading_h3 heading_background_white">Pay-per-click</h3>
+                        <h3 className="card_heading_h3 heading_background_white">advertising</h3>
+                      </div>
+                      <div className="card_link">
+                        <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
+                        <p>Learn more</p>
+                      </div>
+                    </div>
+                    <div className="card_illustration">
+                      <img className="card_illustration_img card_illustration_windows" src="windows.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div className="card card_darkblue">
+                  <div className="card-padding">
+                    <div className="card_text">
+                      <div className="card_heading">
+                        <h3 className="card_heading_h3 heading_background_lightgreen">Social Media</h3>
+                        <h3 className="card_heading_h3 heading_background_lightgreen">Markreting</h3>
+                      </div>
+                      <div className="card_link">
+                        <img className="card_arrow" src="./blackandwhitearrow.png" alt="arrow"/>
+                        <p className="card_link_text_white">Learn more</p>
+                      </div>
+                    </div>
+                    <div className="card_illustration">
+                      <img className="card_illustration_img card_illustration_diagrams" src="diagrams.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div className="proposal">
+            <div className="proposal-padding">
+              <div className="proposal-text">
+                <h3 className="proposal_h3">Let’s make things happen</h3>
+                <p className="proposal_p">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+                <button className="proposal_button">Get your free proposal</button>
+              </div>
+              <div className="proposal-illustration">
+                <img className="proposal-illustration_img" src="./stars.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <article className="services-header">
+            <div className="services-header_heading"><h2>Case Studies</h2></div>
+            <p className="services-header_text">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+          </article>
+          
+        </main>
       </div>
       
     </div>
