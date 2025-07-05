@@ -268,6 +268,54 @@ button{
                     }
                 }
             }
+            .proposal{
+                width: 80.729vw;
+                height: 49.93vh;
+                background: #F3F3F3;
+                border-radius: 45px;
+                margin-top: 20vh;
+
+                .proposal-padding{
+                    padding: 60px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    .proposal-text{
+                        width: 34.552vw;
+                        height: 32.66vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .proposal_h3{
+                            font-size: 33px;
+                            font-weight: 500;
+                            margin: 0;
+                        }
+
+                        .proposal_button{
+                            width: 18.750vw;
+                            height: 9.78vh;
+                            background: #191A23;
+                            border-radius: 14px;
+                            color: #ffffff;
+                            flex-shrink: 0;
+                        }
+                    }
+                    .proposal-illustration{
+                        width: 32.161vw;
+                        height: 56.69vh;
+                        margin-top: -12vh;
+                        
+                        .proposal-illustration_img{
+                            width: 359px;
+                            height: 394.27px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
