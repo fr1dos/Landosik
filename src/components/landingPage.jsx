@@ -48,9 +48,9 @@ console.log("Высота видимой области:", viewportHeight);
           </div>
         </header>
         <main>
-          <article className="services-header">
-            <div className="services-header_heading"><h2>Services</h2></div>
-            <p className="services-header_text"><span>At our digital marketing agency, we offer a range of services to </span><span>help businesses grow and succeed online. These services include:</span> </p>
+          <article className="heading-article">
+            <div className="heading-article_heading"><h2>Services</h2></div>
+            <p className="heading-article_text"><span>At our digital marketing agency, we offer a range of services to </span><span>help businesses grow and succeed online. These services include:</span> </p>
           </article>
           <aside className="services">
             <div className="services-cards">
@@ -176,11 +176,169 @@ console.log("Высота видимой области:", viewportHeight);
               </div>
             </div>
           </div>
-          <article className="services-header">
-            <div className="services-header_heading"><h2>Case Studies</h2></div>
-            <p className="services-header_text">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+          <article className="heading-article">
+            <div className="heading-article_heading"><h2>Case Studies</h2></div>
+            <p className="heading-article_text"><span>Explore Real-Life Examples of Our Proven Digital Marketing</span> <span>Success through Our Case Studies</span></p>
           </article>
-          
+          <section className="case-studies">
+            <div className="case-studies-cell">
+              <p className="case-studies-cell-text">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+              <div className="case-studies-cell-link">
+                <a className="case-studies-cell-link-text" href="">Learn more</a>
+                <img className="case-studies-cell-arrow-picture" src="./greenarrow.png" alt="" />
+              </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div className="case-studies-cell">
+              <p className="case-studies-cell-text">For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+              <div className="case-studies-cell-link">
+                <a className="case-studies-cell-link-text" href="">Learn more</a>
+                <img className="case-studies-cell-arrow-picture" src="./greenarrow.png" alt="" />
+              </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div className="case-studies-cell">
+              <p className="case-studies-cell-text">For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+              <div className="case-studies-cell-link">
+                <a className="case-studies-cell-link-text" href="">Learn more</a>
+                <img className="case-studies-cell-arrow-picture" src="./greenarrow.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <article className="heading-article">
+            <div className="heading-article_heading"><h2>Our Working Process </h2></div>
+            <p className="heading-article_text"><span>Step-by-Step Guide to Achieving</span><span>Your Business Goals</span></p>
+          </article>
+          <section>
+            <div className="working-process first-working-process">
+              <div className="working-process-cell-header">
+                <h1>01</h1>
+                <h3>Consultation</h3>
+                <img className="" src="./minusicon.png" alt="" />
+              </div>
+              <hr />
+              <div className="working-process-cell-text">
+                <p><span>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing </span><span> efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</span></p>
+              </div>
+            </div>
+            <div className="working-process">
+              <div className="working-process-cell-header">
+                <h1>02</h1>
+                <h3>Research and Strategy Development</h3>
+                <img className="" src="./plusicon.png" alt="" />
+              </div>
+            </div>
+            <div className="working-process">
+              <div className="working-process-cell-header">
+                <h1>03</h1>
+                <h3>Implementation</h3>
+                <img className="" src="./plusicon.png" alt="" />
+              </div>
+            </div>
+            <div className="working-process">
+              <div className="working-process-cell-header">
+                <h1>04</h1>
+                <h3>Monitoring and Optimization</h3>
+                <img className="" src="./plusicon.png" alt="" />
+              </div>
+            </div>
+            <div className="working-process">
+              <div className="working-process-cell-header">
+                <h1>05</h1>
+                <h3>Reporting and Communication</h3>
+                <img className="" src="./plusicon.png" alt="" />
+              </div>
+            </div>
+            <div className="working-process">
+              <div className="working-process-cell-header">
+                <h1>06</h1>
+                <h3>Continual Improvement</h3>
+                <img className="" src="./plusicon.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <article className="heading-article">
+            <div className="heading-article_heading"><h2>Team </h2></div>
+            <p className="heading-article_text"><span>Meet the skilled and experienced team behind our </span><span>successful digital marketing strategies</span></p>
+          </article>
+          <section className="team">
+            <div className="teammates-row">
+              <div className="teammates-cell">
+                <div className="teammates-cell-person">
+                  <img className="teammates-cell-person_flowerface" src="./flowerface.png" alt="" />
+                  <div className="teammates-cell-person_text">
+                    <h4>John Smith</h4>
+                    <p>CEO and Founder</p>
+                  </div>
+                  <img className="linkedin" src="./linkedin.png" alt="" />
+                </div>
+                <hr />
+                <p className="teammates-cell-text">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+              </div>
+              <div className="teammates-cell">
+                <div className="teammates-cell-person">
+                  <img className="teammates-cell-person_flowerface" src="./flowerface.png" alt="" />
+                  <div className="teammates-cell-person_text">
+                    <h4>John Smith</h4>
+                    <p>CEO and Founder</p>
+                  </div>
+                  <img className="linkedin" src="./linkedin.png" alt="" />
+                </div>
+                <hr />
+                <p className="teammates-cell-text">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+              </div><div className="teammates-cell">
+                <div className="teammates-cell-person">
+                  <img className="teammates-cell-person_flowerface" src="./flowerface.png" alt="" />
+                  <div className="teammates-cell-person_text">
+                    <h4>John Smith</h4>
+                    <p>CEO and Founder</p>
+                  </div>
+                  <img className="linkedin" src="./linkedin.png" alt="" />
+                </div>
+                <hr />
+                <p className="teammates-cell-text">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+              </div>
+            </div>
+            <div className="teammates-row">
+              <div className="teammates-cell">
+                <div className="teammates-cell-person">
+                  <img className="teammates-cell-person_flowerface" src="./flowerface.png" alt="" />
+                  <div className="teammates-cell-person_text">
+                    <h4>John Smith</h4>
+                    <p>CEO and Founder</p>
+                  </div>
+                  <img className="linkedin" src="./linkedin.png" alt="" />
+                </div>
+                <hr />
+                <p className="teammates-cell-text">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+              </div>
+              <div className="teammates-cell">
+                <div className="teammates-cell-person">
+                  <img className="teammates-cell-person_flowerface" src="./flowerface.png" alt="" />
+                  <div className="teammates-cell-person_text">
+                    <h4>John Smith</h4>
+                    <p>CEO and Founder</p>
+                  </div>
+                  <img className="linkedin" src="./linkedin.png" alt="" />
+                </div>
+                <hr />
+                <p className="teammates-cell-text">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+              </div>
+              <div className="teammates-cell">
+                <div className="teammates-cell-person">
+                  <img className="teammates-cell-person_flowerface" src="./flowerface.png" alt="" />
+                  <div className="teammates-cell-person_text">
+                    <h4>John Smith</h4>
+                    <p>CEO and Founder</p>
+                  </div>
+                  <img className="linkedin" src="./linkedin.png" alt="" />
+                </div>
+                <hr />
+                <p className="teammates-cell-text">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+              </div>
+            </div>
+            <button className="team_button">See all team</button>
+          </section>
         </main>
       </div>
       
