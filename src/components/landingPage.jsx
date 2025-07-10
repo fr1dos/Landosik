@@ -339,6 +339,56 @@ console.log("Высота видимой области:", viewportHeight);
             </div>
             <button className="team_button">See all team</button>
           </section>
+          <article className="heading-article">
+            <div className="heading-article_heading"><h2>Testimonials</h2></div>
+            <p className="heading-article_text"><span>Hear from Our Satisfied Clients: Read Our Testimonials </span><span>to Learn More about Our Digital Marketing Services</span></p>
+          </article>
+          <section className="slider-container">
+            <div className="slider-testimonials">
+              <div className="testimonials-cards slider">
+                <div id="slide-1" className="testimonial-card slide">
+                  <div className="bubble">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div className="testimonial-undertext">
+                    <h4>John Smith</h4>
+                    <p>Marketing Director at XYZ Corp</p>
+                  </div>
+                </div>
+                <div id="slide-2" className="testimonial-card slide">
+                  <div className="bubble">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div className="testimonial-undertext">
+                    <h4>John Smith</h4>
+                    <p>Marketing Director at XYZ Corp</p>
+                  </div>
+                </div>
+                <div id="slide-3" className="testimonial-card slide">
+                  <div className="bubble">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div className="testimonial-undertext">
+                    <h4>John Smith</h4>
+                    <p>Marketing Director at XYZ Corp</p>
+                  </div>
+                </div>
+              </div>
+              <div className="slider-navigation thumbnails">
+                <div className="starsliding">
+                  <a href="#slide-1">
+                    <img src="./starsliding.png" alt="" className="slider-navigation-stars" />
+                  </a>
+                  <a href="#slide-2">
+                    <img src="./starsliding.png" alt="" className="slider-navigation-stars" />
+                  </a>
+                  <a href="#slide-3">
+                    <img src="./starsliding.png" alt="" className="slider-navigation-stars" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
       

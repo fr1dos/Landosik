@@ -431,9 +431,11 @@ button{
                         border-radius: 45px;
 
                         .teammates-cell-person{
+                            width: 20.638vw;
                             height: 14.79vh;
                             display: flex;
                             flex-direction: row;
+
                             .teammates-cell-person_flowerface{
                                 width: 6.368vw;
                                 height: 14.07vh;
@@ -450,7 +452,7 @@ button{
                                 }
                             }
                             .linkedin{
-                                margin-left: -0.5vw;
+                                margin-left: auto;
                                 width: 2.214vw;
                                 height: 4.89vh;
                             }
@@ -477,6 +479,95 @@ button{
                     align-self: flex-end;
                 }
             }
+            .slider-container {
+                width: 80.729vw;
+                height: 89.93vh;
+                background: #191A23;
+                border-radius: 45px;
+                margin-top: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                .slider-testimonials {
+                    width: 100%;
+                    height: 68.06vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    .testimonials-cards {
+                        width: 100%;
+                        height: 48.20vh;
+                        display: flex;
+                        flex-direction: row;
+                        scrollbar-width: none;
+                        scroll-padding: 0 20%; 
+                        overflow-x: scroll;
+                        scroll-snap-type: x mandatory;
+                        scroll-behavior: smooth;    
+
+                        .testimonial-card {
+                            width: 48.8%;
+                            height: 48.20vh;
+                            scroll-snap-align: center; 
+                            margin: 0 1.5%;
+                            border-radius: 0.2rem;
+                            
+                            
+                            .bubble {
+                                width: 39.453vw;
+                                height: 38.27vh;
+                                border: 1px solid #B9FF66;
+                                border-radius: 45px;
+                                padding: 6.91vh 3.385vw;
+                                box-sizing: border-box;
+                                
+                                p {
+                                    font-size: 1rem;
+                                    color: white;
+                                }
+                            }
+                            .testimonial-undertext {
+                                margin-top: 2vh;
+                                text-align: right;
+                
+                                h4 {
+                                    margin: 0;
+                                    color: #B9FF66;
+                                    font-weight: 400;
+                                }
+                
+                                p {
+                                    margin: 0;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    .slider-navigation {
+                        width: 36.719vw;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin-top: 1.5rem;
+                        
+                        .starsliding .slider-navigation-stars {
+                            width: 0.911vw;
+                            height: auto;
+                            margin-right: 1vw;
+                        }
+                    }
+                }
+            }
+            // .slider-navigation_arrow {
+            //     width: 1.302vw;
+            //     height: auto;
+            //     cursor: pointer;
+            // }
+
         }
     }
 }
