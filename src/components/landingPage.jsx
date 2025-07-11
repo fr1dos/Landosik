@@ -25,14 +25,14 @@ console.log("Высота видимой области:", viewportHeight);
                 <li className="navigation-bar_nav_list__item">Pricing</li>
                 <li className="navigation-bar_nav_list__item">Blog</li>
               </ul>
-              <button className="navigation-bar_button_request">Request a quote</button>
+              <a href=""><button className="navigation-bar_button_request">Request a quote</button></a>
             </nav>
           </div>
           <div className="header-main">
             <div className="header-main_text">
               <h1 className="header-main_text_h1">Navigating the digital landscape for success</h1>
               <p className="header-main_text_p">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-              <button className="header-main_consultation">Book a consultation</button>
+              <a href=""><button className="header-main_consultation">Book a consultation</button></a>
             </div>
             <div className="header-main_img">
               <img className="gramophone" src="./gramophone.png" alt="gramophone" />
@@ -62,10 +62,12 @@ console.log("Высота видимой области:", viewportHeight);
                         <h3 className="card_heading_h3 heading_background_lightgreen">Search engine</h3>
                         <h3 className="card_heading_h3 heading_background_lightgreen">optimization</h3>
                       </div>
-                      <div className="card_link">
-                        <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
-                        <p>Learn more</p>
-                      </div>
+                      <a className="card_link_href_black" href="">
+                        <div className="card_link">
+                          <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
+                          <p>Learn more</p>
+                        </div>
+                      </a>
                     </div>
                     <div className="card_illustration">
                       <img className="card_illustration_img card_illustration_magnifyingglass" src="magnifyingglass.png" alt="" />
@@ -79,10 +81,12 @@ console.log("Высота видимой области:", viewportHeight);
                         <h3 className="card_heading_h3 heading_background_white">Pay-per-click</h3>
                         <h3 className="card_heading_h3 heading_background_white">advertising</h3>
                       </div>
-                      <div className="card_link">
-                        <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
-                        <p>Learn more</p>
-                      </div>
+                      <a className="card_link_href_black" href="">
+                        <div className="card_link">
+                          <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
+                          <p>Learn more</p>
+                        </div>
+                      </a>
                     </div>
                     <div className="card_illustration">
                       <img className="card_illustration_img card_illustration_windowarrow" src="windowandarrow.png" alt="" />
@@ -98,10 +102,12 @@ console.log("Высота видимой области:", viewportHeight);
                         <h3 className="card_heading_h3 heading_background_white">Social Media</h3>
                         <h3 className="card_heading_h3 heading_background_white">Markreting</h3>
                       </div>
-                      <div className="card_link">
-                        <img className="card_arrow" src="./blackandwhitearrow.png" alt="arrow"/>
-                        <p className="card_link_text_white">Learn more</p>
-                      </div>
+                      <a className="card_link_href_white" href="">
+                        <div className="card_link">
+                          <img className="card_arrow" src="./blackandwhitearrow.png" alt="arrow"/>
+                          <p className="card_link_text_white">Learn more</p>
+                        </div>
+                      </a>
                     </div>
                     <div className="card_illustration">
                       <img className="card_illustration_img card_illustration_windowsmile" src="windowsmile.png" alt="" />
@@ -115,10 +121,12 @@ console.log("Высота видимой области:", viewportHeight);
                         <h3 className="card_heading_h3 heading_background_lightgreen">Search engine</h3>
                         <h3 className="card_heading_h3 heading_background_lightgreen">optimization</h3>
                       </div>
-                      <div className="card_link">
-                        <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
-                        <p>Learn more</p>
-                      </div>
+                      <a className="card_link_href_black" href="">
+                        <div className="card_link">
+                          <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
+                          <p>Learn more</p>
+                        </div>
+                      </a>
                     </div>
                     <div className="card_illustration">
                       <img className="card_illustration_img card_illustration_blackholes" src="blackholes.png" alt="" />
@@ -134,10 +142,12 @@ console.log("Высота видимой области:", viewportHeight);
                         <h3 className="card_heading_h3 heading_background_white">Pay-per-click</h3>
                         <h3 className="card_heading_h3 heading_background_white">advertising</h3>
                       </div>
-                      <div className="card_link">
-                        <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
-                        <p>Learn more</p>
-                      </div>
+                      <a className="card_link_href_black" href="">
+                        <div className="card_link">
+                          <img className="card_arrow" src="./greenandblackarrow.png" alt="arrow"/>
+                          <p>Learn more</p>
+                        </div>
+                      </a>
                     </div>
                     <div className="card_illustration">
                       <img className="card_illustration_img card_illustration_windows" src="windows.png" alt="" />
@@ -151,10 +161,12 @@ console.log("Высота видимой области:", viewportHeight);
                         <h3 className="card_heading_h3 heading_background_lightgreen">Social Media</h3>
                         <h3 className="card_heading_h3 heading_background_lightgreen">Markreting</h3>
                       </div>
-                      <div className="card_link">
-                        <img className="card_arrow" src="./blackandwhitearrow.png" alt="arrow"/>
-                        <p className="card_link_text_white">Learn more</p>
-                      </div>
+                      <a className="card_link_href_white" href="">
+                        <div className="card_link">
+                          <img className="card_arrow" src="./blackandwhitearrow.png" alt="arrow"/>
+                          <p className="card_link_text_white">Learn more</p>
+                        </div>
+                      </a>
                     </div>
                     <div className="card_illustration">
                       <img className="card_illustration_img card_illustration_diagrams" src="diagrams.png" alt="" />
@@ -169,7 +181,7 @@ console.log("Высота видимой области:", viewportHeight);
               <div className="proposal-text">
                 <h3 className="proposal_h3">Let’s make things happen</h3>
                 <p className="proposal_p">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
-                <button className="proposal_button">Get your free proposal</button>
+                <a href=""><button className="proposal_button">Get your free proposal</button></a>
               </div>
               <div className="proposal-illustration">
                 <img className="proposal-illustration_img" src="./stars.png" alt="" />
@@ -214,7 +226,7 @@ console.log("Высота видимой области:", viewportHeight);
               <div className="working-process-cell-header">
                 <h1>01</h1>
                 <h3>Consultation</h3>
-                <img className="" src="./minusicon.png" alt="" />
+                <a href=""><img className="" src="./minusicon.png" alt="" /></a>
               </div>
               <hr />
               <div className="working-process-cell-text">
@@ -225,35 +237,45 @@ console.log("Высота видимой области:", viewportHeight);
               <div className="working-process-cell-header">
                 <h1>02</h1>
                 <h3>Research and Strategy Development</h3>
-                <img className="" src="./plusicon.png" alt="" />
+                <a href="">
+                  <img className="" src="./plusicon.png" alt="" />
+                </a>
               </div>
             </div>
             <div className="working-process">
               <div className="working-process-cell-header">
                 <h1>03</h1>
                 <h3>Implementation</h3>
-                <img className="" src="./plusicon.png" alt="" />
+                <a href="">
+                  <img className="" src="./plusicon.png" alt="" />
+                </a>
               </div>
             </div>
             <div className="working-process">
               <div className="working-process-cell-header">
                 <h1>04</h1>
                 <h3>Monitoring and Optimization</h3>
-                <img className="" src="./plusicon.png" alt="" />
+                <a href="">
+                  <img className="" src="./plusicon.png" alt="" />
+                </a>
               </div>
             </div>
             <div className="working-process">
               <div className="working-process-cell-header">
                 <h1>05</h1>
                 <h3>Reporting and Communication</h3>
-                <img className="" src="./plusicon.png" alt="" />
+                <a href="">
+                  <img className="" src="./plusicon.png" alt="" />
+                </a>
               </div>
             </div>
             <div className="working-process">
               <div className="working-process-cell-header">
                 <h1>06</h1>
                 <h3>Continual Improvement</h3>
-                <img className="" src="./plusicon.png" alt="" />
+                <a href="">
+                  <img className="" src="./plusicon.png" alt="" />
+                </a>
               </div>
             </div>
           </section>
@@ -337,7 +359,7 @@ console.log("Высота видимой области:", viewportHeight);
                 <p className="teammates-cell-text">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
               </div>
             </div>
-            <button className="team_button">See all team</button>
+            <a href=""><button className="team_button">See all team</button></a>
           </section>
           <article className="heading-article">
             <div className="heading-article_heading"><h2>Testimonials</h2></div>
@@ -389,6 +411,75 @@ console.log("Высота видимой области:", viewportHeight);
               </div>
             </div>
           </section>
+          <article className="heading-article">
+            <div className="heading-article_heading"><h2>Contact Us</h2></div>
+            <p className="heading-article_text"><span>Connect with Us: Let's Discuss Your </span><span>Digital Marketing Needs</span></p>
+          </article>
+          <aside className="contact">
+            <section className="contact-form">
+              <div className="contact-from-radio-buttons">
+                <div className="radio">
+                  <input type="radio" name="radio" id="radio-1" checked/>
+                  <label for="radio-1" className="radio-label">Say Hi</label>
+                </div>
+                <div className="radio">
+                  <input type="radio" name="radio" id="radio-2" checked/>
+                  <label for="radio-2" className="radio-label">Get a Quote</label>
+                </div>
+              </div>
+              <div className="contact-form-fields">
+                <div className="contact-form-label-container">
+                  <label for="username">Name</label> <input type="text" id="Name" placeholder="Name" className="contact-field_input"/>
+                </div>
+                <div className="contact-form-label-container">
+                  <label for="email">Email</label> <input type="Email" id="Email" placeholder="Email" className="contact-field_input"/>
+                </div>
+                <div className="contact-form-label-container">
+                  <label for="message">Message</label> <input type="text" id="Name" placeholder="Message" className="contact-field_input contact-fied_input_message"/>
+                </div>
+              </div>
+              <a href=""><button className="contact-form_button">Send Message</button></a>
+            </section>
+            <div className="contact-illustration">
+              <img src="./contactstars.png" alt="" />
+            </div>
+          </aside>
+          <footer>
+            <div className="footer-head">
+              <div className="footer-head-links-and-logotypes">
+                <img className="whitepositivus-logo" src="whitelogopositivus.png" alt="Positivus"/>
+                <div className="footer-head-links">
+                  <a href="">About us</a>
+                  <a href="">Services</a>
+                  <a href="">Use Cases</a>
+                  <a href="">Pricing</a>
+                  <a href="">Blog</a>
+                </div>
+                <div className="footer-head-logotypes">
+                  <img src="whitelinkedin.png" alt="linkedin" />
+                  <img src="whitefacebook.png" alt="facebook" />
+                  <img src="whitetwitter.png" alt="twitter" />
+                </div>
+              </div>
+              <div className="footer-body">
+                <div className="footer-body-contact">
+                  <h4>Contact us:</h4>
+                  <p>Email: info@positivus.com</p>
+                  <p>Phone: 555-567-8901</p>
+                  <p><span>Address: 1234 Main St</span> <span>Moonstone City, Stardust State 12345</span></p>
+                </div>
+                <div className="footer-body-subscription">
+                  <input className="footer-body-subscription_input" type="Email" name="Email" id="footer-Email" placeholder="Email"/>
+                  <a href=""><button className="footer-body-subscription_button">Subscribe to news</button></a>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div className="footer-privacy">
+              <p>© 2023 Positivus. All Rights Reserved.</p>
+              <a href="">Privacy Policy</a>
+            </div>
+          </footer>
         </main>
       </div>
       

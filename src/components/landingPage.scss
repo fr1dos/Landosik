@@ -3,6 +3,8 @@
 *::after {
   box-sizing: border-box;
 }
+$color1: #f4f4f4;
+$color2: #B9FF66;
 
 $btn-height: 9.78vh;
 $btn-radius: 14px;
@@ -66,6 +68,7 @@ button{
                         height: $btn-height;
                         background: #fff;
                         border-radius: 14px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -91,6 +94,7 @@ button{
                         border: none; 
                         outline: none; 
                         color: #ffffff;
+                        cursor: pointer;
                     }
                     .header-main_text_h1{
                         margin: 0 auto;
@@ -215,7 +219,14 @@ button{
                                             }
                                         }
                                     }
-                                    
+                                    .card_link_href_black{
+                                        text-decoration: none;
+                                        color: black;
+                                    }
+                                    .card_link_href_white{
+                                        text-decoration: none;
+                                        color: #fff;
+                                    }
                                     .card_link{
                                         display: flex;
                                         flex-direction: row;
@@ -315,6 +326,7 @@ button{
                             border: none; 
                             outline: none; 
                             flex-shrink: 0;
+                            cursor: pointer;
                         }
                     }
                     .proposal-illustration{
@@ -397,10 +409,13 @@ button{
                         font-size: 1.875rem;
                         font-weight: 500;
                     }
-                    img{
-                        width: 3.776vw;
-                        height: 8.35vh;
+                    a{
                         margin-left: auto;
+
+                        img{
+                            width: 3.776vw;
+                            height: 8.35vh;
+                        }
                     }
                 }
                 hr{
@@ -468,15 +483,19 @@ button{
                     }
 
                 }
-                .team_button{
-                    width: 17.188vw;
-                    height: $btn-height;
-                    background: #191A23;
-                    border-radius: 14px;
-                    border: none; 
-                    outline: none; 
-                    color: #ffffff;
+                a{
                     align-self: flex-end;
+
+                    .team_button{
+                        width: 17.188vw;
+                        height: $btn-height;
+                        background: #191A23;
+                        border-radius: 14px;
+                        border: none; 
+                        outline: none; 
+                        color: #ffffff;
+                        cursor: pointer;
+                    }
                 }
             }
             .slider-container {
@@ -562,12 +581,256 @@ button{
                     }
                 }
             }
-            // .slider-navigation_arrow {
-            //     width: 1.302vw;
-            //     height: auto;
-            //     cursor: pointer;
-            // }
+            .contact{
+                margin-top: 14vh;
+                width: 80.729vw;
+                height: 111.22vh;
+                background: #F3F3F3;
+                border-radius: 45px;
+                padding: 8.63vh 6.510vw 11.51vh 6.51vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
 
+                .contact-form{
+                    width: 36.198vw;
+                    height: 91.08vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    .contact-from-radio-buttons{
+                        display: flex;
+                        flex-direction: row;
+
+                        .radio {
+                            margin-right: 2rem;
+                            input[type="radio"] {
+                                position: absolute;
+                                opacity: 0;
+                                + .radio-label {
+                                &:before {
+                                    content: '';
+                                    background: $color1;
+                                    border-radius: 100%;
+                                    border: 1px solid black;
+                                    display: inline-block;
+                                    width: 1.4em;
+                                    height: 1.4em;
+                                    position: relative;
+                                    top: -0.2em;
+                                    margin-right: 0.3em; 
+                                    vertical-align: top;
+                                    cursor: pointer;
+                                    text-align: center;
+                                    transition: all 250ms ease;
+                                }
+                                }
+                                &:checked {
+                                + .radio-label {
+                                    &:before {
+                                    background-color: $color2;
+                                    box-shadow: inset 0 0 0 4px $color1;
+                                    }
+                                }
+                                }
+                                &:focus {
+                                + .radio-label {
+                                    &:before {
+                                    outline: none;
+                                    border-color: black;
+                                    }
+                                }
+                                }
+                                + .radio-label {
+                                &:empty {
+                                    &:before {
+                                    margin-right: 0;
+                                    }
+                                }
+                                }
+                            }
+                        }
+                    }
+
+                    .contact-form-fields{
+                        width: 36.198vw;
+                        height: 65.76vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        
+                        .contact-field_input{
+                            width: 100%;
+                            height: 8.49vh;
+                            padding: 18px 30px;
+                            border-radius: 14px;
+                            font-family: 'Space Grotesk', sans-serif;
+                            font-size: 1rem;
+
+                            &.contact-fied_input_message{
+                                height: 27.34vh;
+                                padding-bottom: 21.44vh;
+                            }
+                        }
+                    }
+                    .contact-form_button, .contact-form_button a{
+                        width: 100%;
+                        height: $btn-height;
+                        background: #191A23;
+                        border-radius: 14px;
+                        border: none; 
+                        outline: none; 
+                        color: #ffffff;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+                .contact-illustration img{
+                    margin-left: 14vw;
+                    width: 45.024vw;
+                    height: 93.24vh;
+                }
+            }
+            footer{
+                margin-top: 14vh;
+                width: 80.729vw;
+                height: 73.96vh;
+                background: #191A23;
+                padding: 7.91vh 3.906vw ;
+                border-top-left-radius: 45px;
+                border-top-right-radius: 45px;
+
+                .footer-head{
+                    width: 72.982vw;
+                    height: 40.43vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .footer-head-links-and-logotypes{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-content: center;
+
+                        .whitepositivus-logo{
+                            width: 11.719vw;
+                            height: 4.17vh;
+                        }
+                        .footer-head-links{
+                            display: flex;
+                            gap: 2.6vw;
+                            
+                            a{
+                                color: #fff;
+                            }
+                        }
+                        .footer-head-logotypes{
+                            display: flex;
+                            gap: 1.3vw;
+
+                            img{
+                                width: 1.953vw;
+                                height: 4.32vh;
+                                row-gap : 30px;
+                            }
+                        }
+                    }
+                    .footer-body{
+                        display: flex;
+                        flex-direction: row;
+                        // margin-top: 9.50vh;
+                        justify-content: space-between;
+
+                        .footer-body-contact{
+                            display: flex;
+                            flex-direction: column;
+                            width: 21.61vw;
+                            height: 26.62vh;
+                            justify-content: space-between;
+
+                            h4 {
+                                width: max-content;
+                                padding-inline: 0.4vw;
+                                background: #B9FF66;
+                                border-radius: 7px;
+                                display: flex;
+                                align-items: center;     
+                                justify-content: center; 
+                                margin: 0;
+                                font-weight: 500;
+                            }
+
+                            p{
+                                margin: 0;
+                                color: #fff;
+                                font-size: 1rem;
+                                span{
+                                    display: flex;
+                                }
+                            }
+                        }
+                        .footer-body-subscription{
+                            width: 41.28vw;
+                            height: 26.47vh;
+                            background: #292A32;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            gap: 1rem;
+                            align-items: center;
+                            border-radius: 14px;
+
+                            .footer-body-subscription_input{
+                                width: 18.55vw;
+                                height: 9.64vh;
+                                background: none;
+                                border: 1px solid #fff;
+                                border-radius: 14px;
+                                padding: 22px 35px;
+
+                            }
+                            input::placeholder {
+                                font-size: 1rem;
+                                color: #fff;
+                            }
+                            input:focus{
+                                color: #fff;
+                                font-size: 1rem;
+                            }
+                            .footer-body-subscription_button{
+                                width: 16.21vw;
+                                height: 9.64vh;
+                                background: #B9FF66;
+                                border: none;
+                                border-radius: 14px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                hr{
+                    margin: 7vh 0;
+                }
+                .footer-privacy{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3rem;
+                    color: #fff;
+                    font-size: 1.125rem;
+
+                    p{
+                        margin: 0;
+                    }
+                    a{
+                        margin: 0;
+                        color: #fff;
+                        font-size: 1.125rem;
+                    }
+                }
+            }
         }
     }
 }
