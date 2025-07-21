@@ -28,13 +28,46 @@ const Header = () => {
                 <img className="gramophone" src="./header-main-gramophone.png" alt="gramophone" />
             </div>
             </div>
-            <div className="logotypes">
-            <img className="logotypes-logo" src="./header-logotype-amazon.svg" alt="Amazon" />
-            <img className="logotypes-logo" src="./header-logotype-dribble.svg" alt="Dribbble" />
-            <img className="logotypes-logo" src="./header-logotype-hubspot.svg" alt="HubSpot" />
-            <img className="logotypes-logo" src="./header-logotype-notion.svg" alt="Notion" />
-            <img className="logotypes-logo" src="./header-logotype-netflix.svg" alt="Netflix" />
-            <img className="logotypes-logo" src="./header-logotype-zoom.svg" alt="Zoom" />
+            <div className="marquee-container">
+                <div className="logotypes marquee-track marquee-left">
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-amazon.svg" alt="Amazon" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-dribble.svg" alt="Dribbble" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-hubspot.svg" alt="HubSpot" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-notion.svg" alt="Notion" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-netflix.svg" alt="Netflix" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-zoom.svg" alt="Zoom" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-amazon.svg" alt="Amazon" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-dribble.svg" alt="Dribbble" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-hubspot.svg" alt="HubSpot" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-notion.svg" alt="Notion" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-netflix.svg" alt="Netflix" />
+                    </div>
+                    <div class="scroll-card">
+                        <img className="logotypes-logo" src="./header-logotype-zoom.svg" alt="Zoom" />
+                    </div>
+
+                </div>
             </div>
         </header>
     )

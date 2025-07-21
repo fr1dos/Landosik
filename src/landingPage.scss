@@ -18,6 +18,8 @@ $padding-button: 20px 35px;
 
 $padding-horizontal: clamp(16px, 6vw, 100px);
 
+
+
 body{
     font-family: $font-Space-Grotesk;
 }
@@ -161,6 +163,41 @@ header{
         filter: grayscale(1);
     }
 }
+
+.marquee-container {
+    overflow: hidden;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-left 15s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.scroll-card {
+    padding-inline: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-card:hover {
+    transform: scale(1.5);
+}
+
 
 .services{
     margin-top: 11.51vh;
