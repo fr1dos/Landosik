@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './components/landingPage.scss'
-import App from './components/landingPage.jsx'
+import './landingPage.scss'
+import App from './landingPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

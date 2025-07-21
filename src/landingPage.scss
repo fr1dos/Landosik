@@ -163,7 +163,7 @@ header{
 }
 
 .services{
-    margin-top: 7vh;
+    margin-top: 11.51vh;
     display: flex;
     flex-direction: column;
 }
@@ -279,7 +279,7 @@ header{
     padding: 10.07vh 3.906vw 10.07vh 3.906vw;
     border-radius: 45px;
     display: flex;
-    margin-top: 12vh;
+    margin-top: 11.51vh;
     flex-direction: row;
 }
 
@@ -322,7 +322,7 @@ header{
     box-shadow: 0px 4px 0px 0px #191A23;
 
     &.first-working-process{
-        margin-top: 12vh;
+        margin-top: 11.51vh;
         background: #B9FF66;
     }
 
@@ -352,10 +352,8 @@ header{
 .team{
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 11.51vh;
     gap: 8.63vh;
-    
-    
 }
 
 .teammates-gap{
@@ -412,10 +410,9 @@ header{
 }
 
 .slider-container {
-
     background: #191A23;
     border-radius: 45px;
-    margin-top: 10vh;
+    margin-top: 11.51vh;
     padding: 84px 0;
     display: flex;
     justify-content: center;
@@ -431,7 +428,6 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 124px;
-    
 }
 
 .testimonials-cards {
@@ -443,7 +439,6 @@ header{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;    
-
 }
 
 .testimonial-card {
@@ -492,7 +487,7 @@ header{
 }
 
 .contact{
-    margin-top: 14vh;
+    margin-top: 11.51vh;
     background: #F3F3F3;
     border-radius: 45px;
     padding: 8.63vh 0vw 11.51vh 6.51vw;
@@ -605,7 +600,7 @@ header{
 }
 
 footer{
-    margin-top: 14vh;
+    margin-top: 20.14vh;
     background: #191A23;
     padding: 7.91vh 3.906vw ;
     border-top-left-radius: 45px;
