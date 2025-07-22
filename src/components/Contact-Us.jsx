@@ -12,24 +12,24 @@ const ContactUs = () => {
               <div className="contact-from-radio-buttons">
                 <div className="radio">
                   <input type="radio" name="radio" id="radio-1" checked/>
-                  <label for="radio-1" className="radio-label">Say Hi</label>
+                  <label htmlFor="radio-1" className="radio-label">Say Hi</label>
                 </div>
                 <div className="radio">
                   <input type="radio" name="radio" id="radio-2" checked/>
-                  <label for="radio-2" className="radio-label">Get a Quote</label>
+                  <label htmlFor="radio-2" className="radio-label">Get a Quote</label>
                 </div>
               </div>
               <div className="contact-form-fields">
                 <div className="contact-form-label-container">
-                  <label for="username">Name</label> 
+                  <label htmlFor="username">Name</label> 
                   <input type="text" id="Name" placeholder="Name" className="contact-field_input"/>
                 </div>
                 <div className="contact-form-label-container">
-                  <label for="email">Email*</label> 
+                  <label htmlFor="email">Email*</label> 
                   <input type="Email" id="Email" placeholder="Email" className="contact-field_input"/>
                 </div>
                 <div className="contact-form-label-container">
-                  <label for="message">Message*</label> 
+                  <label htmlFor="message">Message*</label> 
                   <input type="text" id="Name" placeholder="Message" className="contact-field_input contact-fied_input_message"/>
                 </div>
               </div>
