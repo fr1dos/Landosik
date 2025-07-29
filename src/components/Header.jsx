@@ -1,5 +1,5 @@
 import React from "react";
-
+import {LogoList} from './Header-Logotypes'
 const Header = () => {
     return(
         <header>
@@ -30,43 +30,8 @@ const Header = () => {
             </div>
             <div className="marquee-container">
                 <div className="logotypes marquee-track marquee-left">
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-amazon.svg" alt="Amazon" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-dribble.svg" alt="Dribbble" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-hubspot.svg" alt="HubSpot" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-notion.svg" alt="Notion" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-netflix.svg" alt="Netflix" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-zoom.svg" alt="Zoom" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-amazon.svg" alt="Amazon" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-dribble.svg" alt="Dribbble" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-hubspot.svg" alt="HubSpot" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-notion.svg" alt="Notion" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-netflix.svg" alt="Netflix" />
-                    </div>
-                    <div className="scroll-card">
-                        <img className="logotypes-logo" src="./header-logotype-zoom.svg" alt="Zoom" />
-                    </div>
-
+                    <LogoList />
+                    <LogoList />
                 </div>
             </div>
         </header>

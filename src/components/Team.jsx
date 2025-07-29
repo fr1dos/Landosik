@@ -1,4 +1,6 @@
 import React from "react";
+import { TeamMembers } from "./Team-Cell";
+
 
 const Team = () => {
     return(
@@ -9,17 +11,18 @@ const Team = () => {
         </section>
         <section className="team">
             <div className="teammates-gap">
-            <div className="teammates-cell">
-              <div className="teammates-cell-person">
-                <img className="teammates-cell-person_flowerface" src="./team-john-smit.png" alt="" />
-                <div className="teammates-cell-person_text">
-                  <h4>John Smith</h4>
-                  <p>CEO and Founder</p>
+              <TeamMembers />
+              {/* <div className="teammates-cell">
+                <div className="teammates-cell-person">
+                  <img className="teammates-cell-person_flowerface" src="./team-john-smit.png" alt="" />
+                  <div className="teammates-cell-person_text">
+                    <h4>John Smith</h4>
+                    <p>CEO and Founder</p>
+                  </div>
+                  <img className="linkedin" src="./team-linkedin.svg" alt="" />
                 </div>
-                <img className="linkedin" src="./team-linkedin.svg" alt="" />
-              </div>
-                <hr />
-              <p className="teammates-cell-text">10+ years of experience in digital <br /> marketing. Expertise in SEO, PPC, <br /> and content strategy</p>
+                  <hr />
+                <p className="teammates-cell-text">10+ years of experience in digital <br /> marketing. Expertise in SEO, PPC, <br /> and content strategy</p>
               </div>
               <div className="teammates-cell">
                 <div className="teammates-cell-person">
@@ -32,7 +35,8 @@ const Team = () => {
                 </div>
                 <hr />
                 <p className="teammates-cell-text">7+ years of experience in project <br /> management and team leadership. <br /> Strong organizational and <br /> communication skills</p>
-              </div><div className="teammates-cell">
+              </div>
+              <div className="teammates-cell">
                 <div className="teammates-cell-person">
                   <img className="teammates-cell-person_flowerface" src="./team-michael-brown.png" alt="" />
                   <div className="teammates-cell-person_text">
@@ -79,7 +83,7 @@ const Team = () => {
                 </div>
                 <hr />
                 <p className="teammates-cell-text">2+ years of experience in writing <br /> and editing <br />Skilled in creating compelling, SEO- <br /> optimized content for various <br /> industries</p>
-              </div>
+              </div> */}
             </div>
             <button className="team_button">See all team</button>
         </section>

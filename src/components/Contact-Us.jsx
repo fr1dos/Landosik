@@ -11,11 +11,11 @@ const ContactUs = () => {
             <section className="contact-form">
               <div className="contact-from-radio-buttons">
                 <div className="radio">
-                  <input type="radio" name="radio" id="radio-1" checked/>
+                  <input type="radio" name="radio" id="radio-1"/>
                   <label htmlFor="radio-1" className="radio-label">Say Hi</label>
                 </div>
                 <div className="radio">
-                  <input type="radio" name="radio" id="radio-2" checked/>
+                  <input type="radio" name="radio" id="radio-2"/>
                   <label htmlFor="radio-2" className="radio-label">Get a Quote</label>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import {Card} from "./services-Card.jsx"
+import {Card} from "./Services-Card.jsx"
 const Services = () =>{
     return(
     <>

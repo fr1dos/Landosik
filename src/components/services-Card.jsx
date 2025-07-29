@@ -1,4 +1,4 @@
-import { servicesRendering } from "./services-Data.jsx";
+import { servicesRendering } from "./Services-Data.jsx";
 
 export function Card() {
     const cardItems = servicesRendering.map(element =>

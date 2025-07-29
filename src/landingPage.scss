@@ -159,7 +159,7 @@ header{
     display: flex;
     justify-content: space-between;
 
-    .logotypes-logo{
+    div .logotypes-logo{
         filter: grayscale(1);
     }
 }
@@ -351,6 +351,10 @@ header{
     margin: 0vh 4.167vw 0vh 4.167vw;
 }
 
+.working-procees-container{
+    margin-top: 11.51vh;
+}
+
 .working-process{
     padding: 5.90vh 3.906vw 5.90vh 3.906vw;
     background: #F3F3F3;
@@ -358,16 +362,25 @@ header{
     border-radius: 45px;
     border: 1px solid black;
     box-shadow: 0px 4px 0px 0px #191A23;
+    transition: background-color 0.3s ease;
 
-    &.first-working-process{
-        margin-top: 11.51vh;
-        background: #B9FF66;
-    }
+  &.active {
+    background-color: #B9FF66;
+  }
 
     hr{
         background: #000;
         border: 0.11vh solid black;
+        
     }
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        display: block; 
+    }
+
 }
 
 .working-process-cell-header{
@@ -386,6 +399,34 @@ header{
     }
 }
 
+.accordion {
+
+  &-toggle {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+    &:checked {
+
+      & ~ .accordion-content {
+        max-height: 500px;
+        padding: 10px 0 10px 10px;
+      }
+    }
+  }
+
+  &-header {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+}
 
 .team{
     display: flex;
