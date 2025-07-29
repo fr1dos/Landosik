@@ -1,21 +1,13 @@
 import React from "react";
-import { Splide, SplideSlide, SplideTracks } from '@splidejs/react-splide';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const slidesIds = [1, 2, 3, 4, 5];
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-function Slide({ id }) {
-  return (
-    <div id={`slide-${id}`} className="testimonial-card slide">
-      <div className="bubble">
-        <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
-      </div>
-      <div className="testimonial-undertext">
-        <h4>John Smith</h4>
-        <p>Marketing Director at XYZ Corp</p>
-      </div>
-    </div>
-  );
-}
+// import required modules 
+import { Pagination, Navigation } from 'swiper/modules';
 
 const Testimonials = () => {
   return (
@@ -29,18 +21,85 @@ const Testimonials = () => {
       <section className="slider-container">
         <div className="slider-testimonials">
           <div className="testimonials-cards slider">
-            {slidesIds.map((id) => (
-              <Slide key={id} id={id} />
-            ))}
-          </div>
-          <div className="slider-navigation thumbnails">
-            <div className="navigation-sliding">
-              {slidesIds.map((id) => (
-                <a key={id} href={`#slide-${id}`}>
-                  <img src="./testimonials-slider-star.svg" alt="" className="slider-navigation-stars" />
-                </a>
-              ))}
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={50}
+              loop={true}
+              centeredSlides={true}
+              navigation={{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              }}
+              pagination={{
+                clickable: true,
+                el: '.swiper-pagination',
+                type: 'bullets',
+              }}
+              modules={[Pagination, Navigation]}
+              className="mySwiper">
+              <SwiperSlide>
+                <div id='slide-1' className="testimonial-card slide">
+                  <div className="bubble">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div className="testimonial-undertext">
+                    <h4>John Smith</h4>
+                    <p>Marketing Director at XYZ Corp</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div id='slide-2' className="testimonial-card slide">
+                  <div className="bubble">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div className="testimonial-undertext">
+                    <h4>John Smith</h4>
+                    <p>Marketing Director at XYZ Corp</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div id='slide-3' className="testimonial-card slide">
+                  <div className="bubble">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div className="testimonial-undertext">
+                    <h4>John Smith</h4>
+                    <p>Marketing Director at XYZ Corp</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div id='slide-4' className="testimonial-card slide">
+                  <div className="bubble">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div className="testimonial-undertext">
+                    <h4>John Smith</h4>
+                    <p>Marketing Director at XYZ Corp</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div id='slide-5' className="testimonial-card slide">
+                  <div className="bubble">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                  </div>
+                  <div className="testimonial-undertext">
+                    <h4>John Smith</h4>
+                    <p>Marketing Director at XYZ Corp</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            <div className="button-Attrangment">
+              <div className="button-swiper">
+                <div className="swiper-button-prev"></div>
+                <div className="swiper-pagination"></div>
+                <div className="swiper-button-next"></div>
+              </div>
             </div>
+            </Swiper>
           </div>
         </div>
       </section>
