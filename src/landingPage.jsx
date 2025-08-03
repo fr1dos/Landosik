@@ -1,5 +1,3 @@
-// import { useState } from 'react'
-
 import CaseStudies from "./components/Case-Studies"
 import ContactUs from "./components/Contact-Us"
 import Footer from "./components/Footer"

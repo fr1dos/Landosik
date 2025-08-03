@@ -13,6 +13,8 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 
 const Testimonials = () => {
+  const isMobile = window.innerWidth <= 574;
+
   return (
     <>
       <section className="heading-article">
@@ -24,43 +26,44 @@ const Testimonials = () => {
       <section className="slider-container">
         <div className="slider-testimonials">
           <div className="testimonials-cards slider">
-            <Swiper
-              slidesPerView={2}
-              spaceBetween={50}
-              loop={true}
-              centeredSlides={true}
-              navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              }}
-              pagination={{
-                clickable: true,
-                el: '.swiper-pagination',
-                type: 'bullets',
-              }}
-              modules={[Pagination, Navigation]}
-              className="mySwiper">
-              {swiperContent.map((content, index) => (
-                <SwiperSlide key={index}>
-                  <div id={`slide-${index+1}`} className="testimonial-card slide">
-                    <div className="bubble">
-                      <p>{content.bubbleText}</p>
+              <Swiper
+              
+                slidesPerView={isMobile ? 1 : 2}
+                spaceBetween={50}
+                loop={true}
+                centeredSlides={true}
+                navigation={{
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                }}
+                pagination={{
+                  clickable: true,
+                  el: '.swiper-pagination',
+                  type: 'bullets',
+                }}
+                modules={[Pagination, Navigation]}
+                className="mySwiper">
+                {swiperContent.map((content, index) => (
+                  <SwiperSlide key={index}>
+                    <div id={`slide-${index+1}`} className="testimonial-card slide">
+                      <div className="bubble">
+                        <p>{content.bubbleText}</p>
+                      </div>
+                      <div className="testimonial-undertext">
+                        <h4>{content.name}</h4>
+                        <p>{content.position}</p>
+                      </div>
                     </div>
-                    <div className="testimonial-undertext">
-                      <h4>{content.name}</h4>
-                      <p>{content.position}</p>
-                    </div>
+                  </SwiperSlide>
+                ))}
+                <div className="button-Attrangment">
+                  <div className="button-swiper">
+                    <div className="swiper-button-prev"></div>
+                    <div className="swiper-pagination"></div>
+                    <div className="swiper-button-next"></div>
                   </div>
-                </SwiperSlide>
-              ))}
-              <div className="button-Attrangment">
-                <div className="button-swiper">
-                  <div className="swiper-button-prev"></div>
-                  <div className="swiper-pagination"></div>
-                  <div className="swiper-button-next"></div>
                 </div>
-              </div>
-            </Swiper>
+              </Swiper>
           </div>
         </div>
       </section>

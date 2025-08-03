@@ -1,6 +1,7 @@
 import React from "react";
 
 const Footer = () => {
+  const isMobile = window.innerWidth <= 576;
     return(
         <footer>
           <div className="footer-head">
@@ -13,11 +14,13 @@ const Footer = () => {
                 <a href="">Pricing</a>
                 <a href="">Blog</a>
               </div>
-              <div className="footer-head-logotypes">
-                <img src="footer-linkedin.svg" alt="linkedin" />
-                <img src="footer-facebook.svg" alt="facebook" />
-                <img src="footer-twitter.svg" alt="twitter" />
-              </div>
+              {!isMobile && (
+                <div className="footer-head-logotypes">
+                  <img src="footer-linkedin.svg" alt="linkedin" />
+                  <img src="footer-facebook.svg" alt="facebook" />
+                  <img src="footer-twitter.svg" alt="twitter" />
+                </div>
+              )}
             </div>
             <div className="footer-body">
               <div className="footer-body-contact">
@@ -30,12 +33,19 @@ const Footer = () => {
                 <input className="footer-body-subscription_input"  type="Email" name="Email" id="footer-Email" placeholder="Email"/>
                 <button className="footer-body-subscription_button">Subscribe to news</button>
               </div>
+              {isMobile && (
+                <div className="footer-head-logotypes">
+                  <img src="footer-linkedin.svg" alt="linkedin" />
+                  <img src="footer-facebook.svg" alt="facebook" />
+                  <img src="footer-twitter.svg" alt="twitter" />
+                </div>
+              )}
             </div>
           </div>
           <hr />
           <div className="footer-privacy">
             <p>© 2025 Positivus. All Rights Reserved.</p>
-            <a href="">Privacy Policy</a>
+            <a href="#">Privacy Policy</a>
           </div>
         </footer>
     )

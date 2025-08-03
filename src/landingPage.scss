@@ -71,6 +71,8 @@ button{
     align-items: center;
 
     .heading-article_heading{
+        display: flex;
+        flex-direction: column;
         background: #B9FF66;
         border-radius: 7px;
         display: flex;
@@ -442,7 +444,6 @@ header{
 }
 
 .teammates-cell{
-    width: 387px;
     border: 1px solid black;
     box-shadow: 0px 4px 0px 0px #191A23;
     padding: 5.04vh 2.604vw 5.04vh 2.604vw;
@@ -529,6 +530,9 @@ header{
     width: 39.453vw;
     height: 38.27vh;
     padding: 6.91vh 3.385vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-sizing: border-box;
     background: url(testimonials-bg-bubble.png);
 
@@ -715,7 +719,7 @@ header{
 }
 
 .contact-form_button{
-    height: $btn-height;
+    padding: $padding-button;
     background: #191A23;
     font-size: 1.25rem;
     border-radius: 14px;

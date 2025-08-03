@@ -1,6 +1,8 @@
 import { servicesRendering } from "./Services-Data.jsx";
 
 export function Card() {
+    const isMobile = window.innerWidth <= 574;
+
     const cardItems = servicesRendering.map(element =>
         <div key={element.id} className= {element.cardBackGround}>
             <div className="card_text">
@@ -10,12 +12,19 @@ export function Card() {
                 </div>
                 <button className="card_link">
                     <img className="card_arrow" src={element.arrowColor} alt="arrow"/>
+                    {isMobile && (
+                        <div className="card_illustration">
+                            <img className="card_illustration_img" src={element.imgSrc} alt="" />
+                        </div>
+                    )}
                     <p className={element.paragraphColor}>Learn more</p>
                 </button>
             </div>
-            <div className="card_illustration">
-                <img className="card_illustration_img" src={element.imgSrc} alt="" />
-            </div>
+            {!isMobile && (
+                <div className="card_illustration">
+                    <img className="card_illustration_img" src={element.imgSrc} alt="" />
+                </div>
+            )}
         </div>
     )
 

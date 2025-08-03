@@ -5,7 +5,7 @@ const Proposal = () => {
     <div className="proposal">
         <div className="proposal-text">
             <h3 className="proposal_h3">Let’s make things happen</h3>
-            <p className="proposal_p">Contact us today to learn more about how our digital <br /> marketing services can help your business grow and <br /> succeed online.</p>
+            <p className="proposal_p">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
             <button className="proposal_button">Get your free proposal</button>
         </div>
         <div className="proposal-illustration">
