@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-  const isMobile = window.innerWidth <= 576;
+  const isMedia = window.innerWidth <= 576;
     return(
         <footer>
           <div className="footer-head">
@@ -14,7 +14,7 @@ const Footer = () => {
                 <a href="">Pricing</a>
                 <a href="">Blog</a>
               </div>
-              {!isMobile && (
+              {!isMedia && (
                 <div className="footer-head-logotypes">
                   <img src="footer-linkedin.svg" alt="linkedin" />
                   <img src="footer-facebook.svg" alt="facebook" />
@@ -33,7 +33,7 @@ const Footer = () => {
                 <input className="footer-body-subscription_input"  type="Email" name="Email" id="footer-Email" placeholder="Email"/>
                 <button className="footer-body-subscription_button">Subscribe to news</button>
               </div>
-              {isMobile && (
+              {isMedia && (
                 <div className="footer-head-logotypes">
                   <img src="footer-linkedin.svg" alt="linkedin" />
                   <img src="footer-facebook.svg" alt="facebook" />

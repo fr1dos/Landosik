@@ -13,7 +13,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 
 const Testimonials = () => {
-  const isMobile = window.innerWidth <= 574;
+  const isMedia = window.innerWidth <= 1199;
 
   return (
     <>
@@ -28,7 +28,7 @@ const Testimonials = () => {
           <div className="testimonials-cards slider">
               <Swiper
               
-                slidesPerView={isMobile ? 1 : 2}
+                slidesPerView={isMedia ? 1 : 2}
                 spaceBetween={50}
                 loop={true}
                 centeredSlides={true}

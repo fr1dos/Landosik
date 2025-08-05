@@ -1,7 +1,7 @@
 import { servicesRendering } from "./Services-Data.jsx";
 
 export function Card() {
-    const isMobile = window.innerWidth <= 574;
+    const isMedia = window.innerWidth <= 767;
 
     const cardItems = servicesRendering.map(element =>
         <div key={element.id} className= {element.cardBackGround}>
@@ -12,7 +12,7 @@ export function Card() {
                 </div>
                 <button className="card_link">
                     <img className="card_arrow" src={element.arrowColor} alt="arrow"/>
-                    {isMobile && (
+                    {isMedia && (
                         <div className="card_illustration">
                             <img className="card_illustration_img" src={element.imgSrc} alt="" />
                         </div>
@@ -20,7 +20,7 @@ export function Card() {
                     <p className={element.paragraphColor}>Learn more</p>
                 </button>
             </div>
-            {!isMobile && (
+            {!isMedia && (
                 <div className="card_illustration">
                     <img className="card_illustration_img" src={element.imgSrc} alt="" />
                 </div>

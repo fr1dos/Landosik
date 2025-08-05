@@ -8,11 +8,11 @@ import 'swiper/css/scrollbar';
 import { Scrollbar } from 'swiper/modules';
 
 export function Cell() {
-  const isMobile = window.innerWidth < 575;
+  const isMedia = window.innerWidth <= 767;
 
   return (
     <>
-      {isMobile && (  
+      {isMedia && (  
         <>
           <Swiper
             slidesPerView={2}
@@ -35,7 +35,7 @@ export function Cell() {
           </Swiper>
         </>
       )}
-      {!isMobile && (
+      {!isMedia && (
         <>
           {cellContent.map((cell, index) => (
             <React.Fragment key={index}>

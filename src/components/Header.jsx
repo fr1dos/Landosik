@@ -1,7 +1,7 @@
 import React from "react";
 import {LogoList} from './Header-Logotypes'
 const Header = () => {
-    const isMobile = window.innerWidth <= 575;
+    const isMedia = window.innerWidth <= 1199;
 
     return(
         <header>
@@ -9,7 +9,7 @@ const Header = () => {
             <div className="logo">
                 <img className="positivus-logo" src="header-black-positivus-logo.svg" alt="Positivus"/>
             </div>
-            {isMobile && (
+            {isMedia && (
                 <nav className="navigation-bar_nav main-nav hamburger-menu">
                     <input id="menu__toggle" type="checkbox" />
                     <label className="menu__btn" htmlFor="menu__toggle">
@@ -24,7 +24,7 @@ const Header = () => {
                     </ul>
                 </nav>
             )}
-            {!isMobile && (
+            {!isMedia && (
                 <nav className="navigation-bar_nav">
                     <ul className="navigation-bar_nav_list">
                         <li className="navigation-bar_nav_list__item">About us</li>
@@ -40,16 +40,21 @@ const Header = () => {
             <div className="header-main">
             <div className="header-main_text">
                 <h1 className="header-main_text_h1">Navigating the <br /> digital landscape <br />for success</h1>
-                {isMobile && (
+                {isMedia && (
                     <div className="header-main_img">
                     <img className="gramophone" src="./header-main-gramophone.png" alt="gramophone" />
                     </div>
                 )}
-                <p className="header-main_text_p">Our digital marketing agency helps businesses <br /> grow and succeed online through a range of <br /> services including SEO, PPC, social media marketing, <br /> and content creation.</p>
+                {isMedia && (
+                    <p className="header-main_text_p">Our digital marketing agency helps businesses  grow and succeed online through a range of services including SEO, PPC, social media marketing,  and content creation.</p>
+                )}
+                {!isMedia && (
+                    <p className="header-main_text_p">Our digital marketing agency helps businesses <br /> grow and succeed online through a range of <br /> services including SEO, PPC, social media marketing, <br /> and content creation.</p>
+                )}
                 <button className="header-main_consultation">Book a consultation</button>
             </div>
             <div className="header-main_img">
-                {!isMobile && (
+                {!isMedia && (
                 <div className="header-main_img">
                     <img className="gramophone" src="./header-main-gramophone.png" alt="gramophone" />
                 </div>
